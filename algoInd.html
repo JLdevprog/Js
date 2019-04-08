@@ -1,10 +1,13 @@
 <script>
+
+
+
 //AlgoInd
 
 
 
 //Function to use
-Function sortArray(myArray){
+function sortArray(myArray){
 	var permutation = 1;
 	while(permutation == 1){
 		//Initialyze at 0 that will change to 1 if nothing change 
@@ -23,7 +26,11 @@ Function sortArray(myArray){
 	return myArray;
 }
 
-
+function smalerBiger(myArray){
+	//To use after Array PreOrder with SortArray
+	bigerNumb = 0;
+	smalerNumb = 0;
+}
 
 
 //Statement
@@ -46,9 +53,18 @@ myArray[2] = numb3;
 
 myArray = sortArray(myArray);
 
+var bigerNumb = smalerBiger(myArray);
+
+smalerBiger(myArray);
+alert(bigerNumb);
+alert(smalerNumb);
 
 //Result
 
 
 
 console.log(myArray);
+
+
+
+</script>
