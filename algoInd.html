@@ -6,7 +6,7 @@
 
 
 
-//Function to use
+//Function to use to sort Numbers in array
 function sortArray(myArray){
 	var permutation = 1;
 	while(permutation == 1){
@@ -25,13 +25,35 @@ function sortArray(myArray){
 	//Return Array Order
 	return myArray;
 }
-
-function smalerBiger(myArray){
+//create Biger and smaler from the numbers
 	//To use after Array PreOrder with SortArray
-	bigerNumb = 0;
-	smalerNumb = 0;
+function smalerBiger(myArray){
+	bigerNumb = myArray[2]+(""+myArray[1]+myArray[0]);
+	smalerNumb = myArray[0]+(""+myArray[1]+myArray[2]);
+}
+//method of soustraction for biger number by smaler number
+	//To use after smalerBiger Numb
+function soustract(bigerNumb,smalerNumb){
+	difference = bigerNumb - smalerNumb
 }
 
+//Stock Result to an Array myStockResult
+	//to Use after soustract
+function stockResult(result){
+	//Stock Difference temporary in Array
+		//if the Number was never Find yet
+	var finder = 1;
+
+	if(difference && finder==1){
+
+		finder = 0;
+
+		for (var i = 0; i < myStockResult.length+1; i++) {
+			myStockResult[i] = difference;
+			return myStockResult[i];
+		}
+	}
+}
 
 //Statement
 
@@ -41,7 +63,8 @@ var numb1 = 8;
 var numb2 = 7;
 var numb3 = 9;
 
-
+//Array Stock Result
+var myStockResult = [];
 
 
 //Processing
@@ -59,11 +82,17 @@ smalerBiger(myArray);
 alert(bigerNumb);
 alert(smalerNumb);
 
+soustract(bigerNumb,smalerNumb);
+
+alert(difference);
+
+stockResult(difference);
+
 //Result
 
-
-
 console.log(myArray);
+
+console.log(myStockResult);
 
 
 
